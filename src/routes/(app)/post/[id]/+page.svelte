@@ -18,6 +18,7 @@
         world: 'រឿង​​បរទេស',
         travel: 'ដើរ​លេង',
         game: 'ពិភព​និម្មិត',
+        template: 'គំរូ​គេហទំព័រ',
     }
 
     let postCategories = $state(data.post.categories.split(","))
@@ -79,7 +80,7 @@
     padding-bottom: 30px;
 }
 .Post .main{
-    background-color: #e2f3a6;
+    background-color: lightblue;
     color: rgb(22, 22, 22);
     padding: 15px;
 }
@@ -96,9 +97,19 @@
 .Post .main .content{
     margin: 20px 0;
     font: 14px/1.5 Courgette, Nokora;
+    text-align: center;
 }
 :global(.Post .main .content img){
     width: 100%;
+}
+:global(.Post .main .content a){
+    width: 25%;
+    background: var(--background);
+    color: white;
+    font: var(--body-font);
+    font-size: 16px;
+    padding: 3px 10px;
+    margin: 0 5px;
 }
 .Post .sidebar a{
     display: block;

@@ -8,14 +8,14 @@ class User{
         return await req.prisma.user.count()
     }
     async createRootUser(req){
-        const hashPassword = bcrypt.hashSync("xxxxxxxxxx", 8)
+        const hashPassword = bcrypt.hashSync("Tin2024", 8)
 
         await req.prisma.user.create({
             data: {
-                email: "guest@khmerweb.app",
-                title: "Guest",
+                email: "sokhavuth@khmerweb.app",
+                title: "សុខាវុធ",
                 password: hashPassword,
-                role: "Guest",
+                role: "Admin",
                 thumb: "",
                 content: "",
                 date: "",

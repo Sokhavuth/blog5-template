@@ -39,7 +39,7 @@
     }
     .setting form span{
         text-align: right;
-        color: white;
+        color: black;
     }
     .setting form input{
         font: var(--body-font);

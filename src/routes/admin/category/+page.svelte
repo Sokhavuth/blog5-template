@@ -35,7 +35,7 @@
     }
     .category form span{
         text-align: right;
-        color: white;
+        color: black;
     }
     .category form input{
         font: var(--body-font);
